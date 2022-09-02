@@ -1,7 +1,7 @@
 FROM jinaai/jina:3.8-py38-perf
 
 COPY gpu_requirements.txt gpu_requirements.txt
-RUN pip install --no-cache-dir -r gpu_requirements.txt
+RUN pip install --no-cache-dir --compile -r gpu_requirements.txt
 
 COPY . /workdir/
 WORKDIR /workdir
