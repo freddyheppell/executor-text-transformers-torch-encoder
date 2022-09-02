@@ -1,4 +1,6 @@
-# TransformerTorchEncoder
+# TransformerTorchEncoder (CUDA 11.3)
+
+> Jina's TransformerTorchEncoder upgraded to support CUDA 11.3 and Pytorch 1.10
 
 **TransformerTorchEncoder** wraps the torch-version of transformers from huggingface. It encodes text data into dense vectors.
 
