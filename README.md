@@ -35,18 +35,18 @@ This executor is also built for the `arm64` platform and pushed to GitHub Contai
 
 Only the CPU image is built cross-platform, but for completeness `amd64`-only builds of the GPU executor are also available from GHCR.
 
-Unlike using Jina Hub, these images will **not automatically be rebuilt to match your local version**. Images will always are always built against the then-`master` version of Jina's base image - check the description for each image on the [registry page](https://github.com/freddyheppell/executor-text-transformers-torch-encoder/pkgs/container/TransformerTorchEncoderCU113/versions?filters%5Bversion_type%5D=tagged) to see what version this was.
+Unlike using Jina Hub, these images will **not automatically be rebuilt to match your local version**. Images will always are always built against the then-`master` version of Jina's base image - check the description for each image on the [registry page](https://github.com/freddyheppell/executor-text-transformers-torch-encoder/pkgs/container/transformer-torch-encoder-cu113/versions?filters%5Bversion_type%5D=tagged) to see what version this was.
 
 Replace your `uses` with:
 ```
-docker://ghcr.io/freddyheppell/TransformerTorchEncoderCU113:latest
+docker://ghcr.io/freddyheppell/transformer-torch-encoder-cu113:latest
 ```
 or
 ```
-docker://ghcr.io/freddyheppell/TransformerTorchEncoderCU113:latest-gpu
+docker://ghcr.io/freddyheppell/transformer-torch-encoder-cu113:latest-gpu
 ```
 
-In production systems, it is advisable to request a specific version. For a list of available versions, [check the container registry page](https://github.com/freddyheppell/executor-text-transformers-torch-encoder/pkgs/container/TransformerTorchEncoderCU113).
+In production systems, it is advisable to request a specific version. For a list of available versions, [check the container registry page](https://github.com/freddyheppell/executor-text-transformers-torch-encoder/pkgs/container/transformer-torch-encoder-cu113).
 
 ### Set `volumes`
 
