@@ -64,5 +64,6 @@ jobs:
       uses: jina-ai/action-hubble-push@v8
       env:
         jinahub_token: ${{ secrets.JINA_TOKEN }}
+        exec_secret: ${{ secrets.JINA_EXECUTOR_SECRET }}
       with:
         git_tag: ${{ github.event.release.tag_name }}
