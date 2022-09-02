@@ -1,4 +1,6 @@
-FROM jinaai/jina:3.8-py38-perf
+FROM jinaai/jina:master-py38-perf
+
+LABEL org.opencontainers.image.description Built against Jina ${JINA_VERSION} (Python ${PYTHON_VERSION}).
 
 COPY gpu_requirements.txt gpu_requirements.txt
 RUN pip install --no-cache-dir --compile -r gpu_requirements.txt

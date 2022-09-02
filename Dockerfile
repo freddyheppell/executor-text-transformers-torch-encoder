@@ -1,4 +1,6 @@
-FROM jinaai/jina:3.8-py38-perf
+FROM jinaai/jina:master-py38-perf
+
+LABEL org.opencontainers.image.description Built against Jina ${JINA_VERSION} (Python ${PYTHON_VERSION}).
 
 # install requirements before copying the workspace
 COPY requirements.txt /requirements.txt
