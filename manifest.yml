@@ -1,5 +1,5 @@
 manifest_version: 1
-name: TransformerTorchEncoder
-description: '`TransformerTorchEncoder` encodes text using transformer models'
-url: https://github.com/jina-ai/executor-text-transformers-torch-encoder
+name: TransformerTorchEncoderCUDA113
+description: '`TransformerTorchEncoder` encodes text using transformer models. Forked with CUDA 11.3 support.'
+url: https://github.com/freddyheppell/executor-text-transformers-torch-encoder
 keywords: [encoder, text, transformer, bert, PyTorch]
